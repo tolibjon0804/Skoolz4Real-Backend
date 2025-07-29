@@ -1,0 +1,27 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skoolz4realdb
+    username: skoolz4real_admin
+    password: tommy0804
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        jakarta:
+          xml:
+            bind:
+              annotation:
+                introspector: enabled
+        types:
+          print:
+            banner: false
+
+
+bot:
+  username: skoolz4realbot
+  token: 7878945342:AAF2z0-Ix8pW2b13yzcO_0vPuoU8QDTNYKo
